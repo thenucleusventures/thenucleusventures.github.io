@@ -28,7 +28,12 @@
             --760px: calc(var(--to-mobile-factor) * 760px);
         }
 
-        .m-xs-auto {}
+        .m-xs-auto {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
     }
 
     @media screen and (min-width: 768px) {
@@ -51,11 +56,7 @@
             --760px: 760px;
         }
 
-        .m-xs-auto {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+        .m-xs-auto {}
     }
 
     body {
