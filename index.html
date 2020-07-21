@@ -9,243 +9,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
     <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
-
-    :root {
-        --white: white;
-        --dark-blue: #1d2b4b;
-        --dark-grey: #6e7a82;
-        --colors-primary: #f4511e;
-        --link-blue: #0454cc;
-        --light-blue: #f1f4f8;
-        --to-mobile-factor: 0.67;
-    }
-
-    @media only screen and (max-width: 768px) {
-        :root {
-            --5px: calc(var(--to-mobile-factor) * 5px);
-            --8px: calc(var(--to-mobile-factor) * 8px);
-            --9px: calc(var(--to-mobile-factor) * 9px);
-            --16px: calc(var(--to-mobile-factor) * 16px);
-            --22px: calc(var(--to-mobile-factor) * 22px);
-            --24px: calc(var(--to-mobile-factor) * 24px);
-            --25px: calc(var(--to-mobile-factor) * 25px);
-            --32px: calc(var(--to-mobile-factor) * 32px);
-            --36px: calc(var(--to-mobile-factor) * 36px);
-            --40px: calc(var(--to-mobile-factor) * 40px);
-            --42px: calc(var(--to-mobile-factor) * 42px);
-            --60px: calc(var(--to-mobile-factor) * 60px);
-            --100px: calc(var(--to-mobile-factor) * 100px);
-            --200px: calc(var(--to-mobile-factor) * 200px);
-            --500px: calc(var(--to-mobile-factor) * 500px);
-            --760px: calc(var(--to-mobile-factor) * 760px);
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        :root {
-            --5px: 5px;
-            --8px: 8px;
-            --9px: 9px;
-            --16px: 16px;
-            --22px: 22px;
-            --24px: 24px;
-            --25px: 25px;
-            --32px: 32px;
-            --36px: 36px;
-            --40px: 40px;
-            --42px: 42px;
-            --60px: 60px;
-            --100px: 100px;
-            --200px: 200px;
-            --500px: 500px;
-            --760px: 760px;
-        }
-    }
-
-    body {
-        margin: 0;
-        font-family: 'Roboto';
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-    }
-
-    .main-container {
-        position: relative;
-        top: 0px;
-        right: 0px;
-    }
-
-    .main-text {
-        position: absolute;
-        left: 15%;
-        top: 30%;
-        color: var(--white);
-    }
-
-    .main-h1 {
-        font-size: var(--36px);
-        margin-bottom: var(--42px)
-    }
-
-    .main-h2 {
-        font-size: var(--24px);
-        max-width: var(--500px)
-    }
-
-    .header {
-        padding-top: var(--9px);
-        margin-bottom: var(--9px);
-        margin-left: var(--60px);
-    }
-
-    .section {
-        padding-top: var(--42px);
-        padding-bottom: var(--42px)
-    }
-
-    .section-title {
-        font-size: var(--36px);
-        line-height: 1.11;
-        letter-spacing: 0.56px;
-        color: var(--dark-blue);
-    }
-
-    .section-sub-title {
-        font-size: var(--16px);
-        font-weight: normal;
-        letter-spacing: normal;
-        color: var(--dark-grey);
-        margin-top: var(--32px);
-        margin-bottom: var(--32px)
-    }
-
-    .section-title-spaced {
-        margin-top: var(--32px)
-    }
-
-    .section-title-underline {
-        margin-top: var(--8px);
-        width: var(--100px);
-        height: var(--5px);
-        background-color: var(--colors-primary);
-    }
-
-    .card {
-        border-radius: var(--16px);
-        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 4px 5px 0 rgba(0, 0, 0, 0.14);
-        background-color: var(--white);
-        text-align: center;
-        padding-top: var(--16px);
-        padding-bottom: var(--16px)
-    }
-
-    .bg-primary-custom {
-        background-color: var(--colors-primary);
-    }
-
-    .bg-link-blue {
-        background-color: var(--link-blue);
-    }
-
-    .bg-dark-blue {
-        background-color: var(--dark-blue);
-    }
-
-    .bg-dark-blue {
-        background-color: var(--dark-blue);
-    }
-
-    .bg-light-blue {
-        background-color: var(--light-blue)
-    }
-
-    .card-circled-image {
-        width: 40px;
-        height: 40px
-    }
-
-    /*.card-title {
-        color: #2b426f;
-        font-size: var(--22px);
-        margin-top: var(--16px);
-        margin-bottom: var(--9px)
-    }
-
-    .card-body {
-        color: #9da6ad;
-        font-size: var(--16px);
-        font-weight: normal;
-        line-height: 1.25;
-        text-align: justify;
-        padding-top: 0px;
-        padding-bottom: 0px
-    }*/
-
-    .bold {
-        font-weight: bold
-    }
-
-    .card-body-spaced {
-        margin-top: var(--16px);
-        margin-bottom: var(--16px)
-    }
-
-    .img-centered {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .card-body-up {
-        position: relative;
-        top: -30px;
-    }
-
-    .margin-bottom-small {
-        margin-bottom: var(--16px)
-    }
-
-    .card-text-custom {
-        color: #9da6ad;
-        font-size: var(--16px);
-        font-weight: normal;
-        line-height: 1.25;
-    }
-
-    .card-title-custom {
-        color: #2b426f;
-        font-size: var(--22px);
-    }
-
-    .card-circled-div {
-        display: block;
-        width: 60px;
-        height: 60px;
-        -moz-border-radius: 30px;
-        -webkit-border-radius: 30px;
-        text-align: center;
-        padding-top: 10px
-    }
-
-    .primary-color-custom {
-        color: var(--colors-primary);
-    }
     </style>
 </head>
 
 <body>
     <div class="container my-2 pt-2 mx-2">
-        <img class="img-fluid" src="./nv-logo.png" srcset="./nv-logo@2x.png 2x,
-                     ./nv-logo@3x.png 3x">
+        <img class="img-fluid" src="img/nv-logo.png" srcset="img/nv-logo@2x.png 2x,
+                     img/nv-logo@3x.png 3x">
     </div>
     <div class="main-container">
-        <img class="img-fluid w-100" src="./18.png" srcset="./18@2x.png 2x,
-                     ./18@3x.png 3x" alt="Taking founders global" />
+        <img class="img-fluid w-100" src="img/18.png" srcset="img/18@2x.png 2x,
+                     img/18@3x.png 3x" alt="Taking founders global" />
         <div class="main-text">
             <div class="main-h1">Taking founders global</div>
             <div class="main-h2">We connect emerging market innovators to the world</div>
@@ -254,11 +31,11 @@
     <div class="container section">
         <div class="section-title">Propelling a connected innovation ecosystem</div>
         <div class="section-title-underline"></div>
-        <div class="section-sub-title">Our core activity pillars are interlinked, bringing together the ideas, knowledge, market insights and funding needed to generate and scale high potential, international ventures.</div>
-        <div class="card-deck">
+        <div class="section-sub-title section-title-spaced">Our core activity pillars are interlinked, bringing together the ideas, knowledge, market insights and funding needed to generate and scale high potential, international ventures.</div>
+        <div class="card-deck section-title-spaced">
             <div class="card">
                 <div class="card-circled-div img-centered bg-primary-custom">
-                    <img class="card-circled-image" src="./accseleration.png" srcset="./accseleration@2x.png 2x,./accseleration@3x.png 3x" alt="Startup support">
+                    <img class="card-circled-image" src="img/accseleration.png" srcset="img/accseleration@2x.png 2x,img/accseleration@3x.png 3x" alt="Startup support">
                 </div>
                 <div class="card-body text-center">
                     <h4 class="card-title card-title-custom">Startup Support</h4>
@@ -267,7 +44,7 @@
             </div>
             <div class="card">
                 <div class="card-circled-div img-centered bg-link-blue">
-                    <img class="card-circled-image" src="./innovation.png" srcset="./innovation@2x.png 2x,./innovation@3x.png 3x" alt="Organizational innovation">
+                    <img class="card-circled-image" src="img/innovation.png" srcset="img/innovation@2x.png 2x,img/innovation@3x.png 3x" alt="Organizational innovation">
                 </div>
                 <div class="card-body text-center">
                     <h4 class="card-title card-title-custom">Organizational innovation</h4>
@@ -276,7 +53,7 @@
             </div>
             <div class="card">
                 <div class="card-circled-div img-centered bg-dark-blue">
-                    <img class="card-circled-image" ssrc="./investment.png" srcset="./investment@2x.png 2x,./investment@3x.png 3x" alt="Early investment">
+                    <img class="card-circled-image" ssrc="img/investment.png" srcset="img/investment@2x.png 2x,img/investment@3x.png 3x" alt="Early investment">
                 </div>
                 <div class="card-body text-center">
                     <h4 class="card-title card-title-custom">Early investment</h4>
@@ -294,7 +71,7 @@
                 <div class="card">
                     <div class="row align-items-center no-gutters">
                         <div class="col-3">
-                            <img class="img-fluid ml-1" src="./the-nucleus-program-transp-bg-14.png" srcset="./the-nucleus-program-transp-bg-14@2x.png 2x,./the-nucleus-program-transp-bg-14@3x.png 3x" alt="The Nucleus - Beirut">
+                            <img class="img-fluid ml-1" src="img/the-nucleus-program-transp-bg-14.png" srcset="img/the-nucleus-program-transp-bg-14@2x.png 2x,img/the-nucleus-program-transp-bg-14@3x.png 3x" alt="The Nucleus - Beirut">
                         </div>
                         <div class="col-9">
                             <div class="card-block mx-3 d-flex flex-column justify-content-between flex-grow-1">
@@ -310,7 +87,7 @@
                 <div class="card">
                     <div class="row align-items-center no-gutters">
                         <div class="col-3">
-                            <img class="img-fluid ml-1" src="./screen-shot-2020-07-02-at-11-33-21-am.png" srcset="./screen-shot-2020-07-02-at-11-33-21-am@2x.png 2x,./screen-shot-2020-07-02-at-11-33-21-am@3x.png 3x" alt="UK Lebanon Tech Hub" />
+                            <img class="img-fluid ml-1" src="img/screen-shot-2020-07-02-at-11-33-21-am.png" srcset="img/screen-shot-2020-07-02-at-11-33-21-am@2x.png 2x,img/screen-shot-2020-07-02-at-11-33-21-am@3x.png 3x" alt="UK Lebanon Tech Hub" />
                         </div>
                         <div class="col-9">
                             <div class="card-block mx-3 d-flex flex-column justify-content-between flex-grow-1">
@@ -329,44 +106,200 @@
         <div class="section-title-underline"></div>
         <div class="section-title-spaced"></div>
         <div class="card-deck pt-5">
-            <div class="card py-0">
-                <img class="img-fluid" src="./rectangle_2.png" srcset="./rectangle_2@2x.png 2x,./rectangle_2@3x.png 3x" alt="Startups" />
+            <div class="card py-0" style="width: 18rem;">
+                <img class="img-fluid" src="img/rectangle_2.png" srcset="img/rectangle_2@2x.png 2x,img/rectangle_2@3x.png 3x" alt="Startups" />
                 <div class="card-body py-0 card-body-up">
                     <div class="card-circled-div img-centered bg-dark-blue">
-                        <img class="card-circled-image" src="./accseleration.png" srcset="./accseleration@2x.png 2x,./accseleration@3x.png 3x" alt="Startups">
+                        <img class="card-circled-image" src="img/accseleration.png" srcset="img/accseleration@2x.png 2x,img/accseleration@3x.png 3x" alt="Startups">
                     </div>
                     <h5 class="card-title card-title-custom">Startups</h5>
                     <p class="card-text card-text-custom text-justify">Accelerate your early stage journey with on-going support tailored to your unique startup needs and stage. Typically we focus on helping you build your business network, secure customer feedback and access funding.</p>
                 </div>
             </div>
-            <div class="card py-0">
-                <img class="img-fluid" src="./mask.png" srcset="./mask@2x.png 2x,./mask@3x.png 3x" alt="Mentors" />
+            <div class="card py-0" style="width: 18rem;">
+                <img class="img-fluid" src="img/mask.png" srcset="img/mask@2x.png 2x,img/mask@3x.png 3x" alt="Mentors" />
                 <div class="card-body py-0 card-body-up">
                     <div class="card-circled-div img-centered bg-dark-blue">
-                        <img class="card-circled-image" src="./mentors.png" srcset="./mentors@2x.png 2x,./mentors@3x.png 3x" alt="Mentors">
+                        <img class="card-circled-image" src="img/mentors.png" srcset="img/mentors@2x.png 2x,img/mentors@3x.png 3x" alt="Mentors">
                     </div>
                     <h5 class="card-title card-title-custom">Mentors</h5>
                     <p class="card-text card-text-custom text-justify">Share your expertise and become a trusted advisor to a startup setting out on their entrepreneurial journey. We’re constantly seeking mentors with a diverse range of knowledge and experience to mentor startups on a 1:1 basis.</p>
                 </div>
             </div>
-            <div class="card py-0">
-                <img class="img-fluid" src="./rectangle_3.png" srcset="./rectangle_3@2x.png 2x,./rectangle_3@3x.png 3x" alt="Investors" />
+            <div class="card py-0" style="width: 18rem;">
+                <img class="img-fluid" src="img/rectangle_3.png" srcset="img/rectangle_3@2x.png 2x,img/rectangle_3@3x.png 3x" alt="Investors" />
                 <div class="card-body py-0 card-body-up">
                     <div class="card-circled-div img-centered bg-dark-blue">
-                        <img class="card-circled-image" src="./mentors.png" src="./investors.png" srcset="./investors@2x.png 2x,./investors@3x.png 3x" alt="Investors">
+                        <img class="card-circled-image" src="img/mentors.png" src="img/investors.png" srcset="img/investors@2x.png 2x,img/investors@3x.png 3x" alt="Investors">
                     </div>
                     <h5 class="card-title card-title-custom">Investors</h5>
                     <p class="card-text card-text-custom text-justify">Maximise your investment potential with access to a diversified portfolio of startups at various stages. We do the sourcing and vetting for you, giving you real-time insights to potential investment opportunities via our platform.</p>
                 </div>
             </div>
-            <div class="card py-0">
-                <img class="img-fluid" src="./rectangle_4.png" srcset="./rectangle_4@2x.png 2x,./rectangle_4@3x.png 3x" alt="Organisations" />
+            <div class="card py-0" style="width: 18rem;">
+                <img class="img-fluid" src="img/rectangle_4.png" srcset="img/rectangle_4@2x.png 2x,img/rectangle_4@3x.png 3x" alt="Organisations" />
                 <div class="card-body py-0 card-body-up">
                     <div class="card-circled-div img-centered bg-dark-blue">
-                        <img class="card-circled-image" src="./corporates.png" srcset="./corporates@2x.png 2x,./corporates@3x.png 3x" alt="Startup support">
+                        <img class="card-circled-image" src="img/corporates.png" srcset="img/corporates@2x.png 2x,img/corporates@3x.png 3x" alt="Startup support">
                     </div>
                     <h5 class="card-title card-title-custom">Organisations</h5>
                     <p class="card-text card-text-custom text-justify">Amplify innovation in-house, solve a specific business challenge, commercialise an idea or spin out a business. We partner with corporate, educational, government and state organizations to implement transformative innovation programs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container section">
+        <div class="section-title">Program journey</div>
+        <div class="section-title-underline"></div>
+        <div class="section-sub-title section-title-spaced">Navigating the early stages of a startups journey is one of the biggest and most enduring challenges any founder will face. From developing their idea and getting it all the way to market, the path is full of obstacles at every turn. The Nucleus has been developed to simplify the early stage journey, keeping entrepreneurs focused on the right actions at the right time. Each startup on the program embarks on a unique, structured path tailored to their individual needs and progress to date.</div>
+        <div class="section-sub-title mt-3 mb-5">After an initial assessment of the business or idea, your program will commence focusing on one of three key stages: </div>
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-circled-div img-centered bg-primary-custom">
+                    <img class="card-circled-image" src="img/ideation.png" srcset="img/ideation@2x.png 2x,img/ideation@3x.png 3x" alt="Ideation">
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="card-title card-title-custom">Ideation</h4>
+                    <p class="card-text card-text-custom text-justify">If you have an idea but have yet to act on it or you have started a business but have yet to validate your solution with the market, we’ll help you get your business off the ground and test your solution with prospective customers. Startups joining this stage of the program will benefit from: </p>
+                    <ul class="card-text card-text-custom text-justify pl-4 mt-4">
+                        <li class="mb-1"><b>Early market feedback</b> gained from concept pitching to potential customers.</li>
+                        <li class="mb-1"><b>Bespoke incubation to support</b> every aspect of getting their business off the ground.</li>
+                        <li class="mb-1"><b>Mentoring</b> from experts matched to their unique needs, including a dedicated lead mentor </li>
+                        <li class="mb-1"><b>Early funding</b> to develop their solution once market validation has been demonstrated (Selected companies only)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-circled-div img-centered bg-link-blue">
+                    <img class="card-circled-image" src="img/validation.png" srcset="img/validation@2x.png 2x,img/validation@3x.png 3x" alt="Execution">
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="card-title card-title-custom">Execution</h4>
+                    <p class="card-text card-text-custom text-justify">If you have already been able to demonstrate some degree of customer traction or product market fit, we’ll help you accelerate progress with structured coaching to develop your product and business overall and matchmaking with relevant industry partners and mentors. Startups joining this stage of the program will benefit from:</p>
+                    <ul class="card-text card-text-custom text-justify pl-4">
+                        <li class="mb-1"><b>Mentoring</b> from experts matched to their unique needs, including a dedicated lead mentor</li>
+                        <li class="mb-1"><b>Dealmaking support</b> from a dedicated POC who will facilitate initial introductions to key industry, commercial, delivery and investment partners based on their needs</li>
+                        <li class="mb-1"><b>Rapid execution program</b> comprising 12 weeks of intensive, structured development focusing on all key aspects of getting their business adopted by early customers.
+                        </li>
+                        <li class="mb-1"><b>Early funding</b> to develop their solution once market validation has been demonstrated (Selected companies only)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-circled-div img-centered bg-dark-blue">
+                    <img class="card-circled-image" ssrc="img/acceleration.png" srcset="img/acceleration@2x.png 2x,img/acceleration@3x.png 3x" alt="Seed investment">
+                </div>
+                <div class="card-body text-center">
+                    <h4 class="card-title card-title-custom">Seed investment </h4>
+                    <p class="card-text card-text-custom text-justify">If your startup is already enjoying early market traction and generating some revenues, we’ll provide you with bespoke support to help you launch a full go to market strategy. Startups joining at this stage of the program will benefit from: </p>
+                    <ul class="card-text card-text-custom text-justify pl-4">
+                        <li class="mb-1"><b>Mentoring</b> from experts matched to their unique needs, including a dedicated lead mentor</li>
+                        <li class="mb-1"><b>Dealmaking support</b> from a dedicated dealmaker who will facilitate business expansion with introductions to key industry, commercial, delivery and investment partners.</li>
+                        <li class="mb-1"><b>Seed investment and investment support</b> offered to a limited number of startups on either a standalone or co-investment basis, in addition to investment sourcing.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-light-blue">
+        <div class="container section">
+            <div class="section-title">Why you should apply to the Nucleus</div>
+            <div class="section-title-underline"></div>
+            <div class="section-title-spaced"></div>
+            <div class="card-deck pt-5">
+                <div class="card">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-3">
+                            <div class="card-circled-div img-centered bg-primary-custom">
+                                <img class="card-circled-image" src="img/support.png" srcset="img/support@2x.png 2x,img/support@3x.png 3x" alt="Support that you need">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="card-block mx-3 d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card-title card-title-custom text-justify">Support that you need</div>
+                                <div class="card-text card-text-custom text-justify">No two startups are the same and one size definitely does not fit all when it comes to startup support. Every startup on our program receives a tailored action plan at the outset based on their unique needs.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-3">
+                            <div class="card-circled-div img-centered bg-primary-custom">
+                                <img class="card-circled-image" src="img/monetization-approve.png" srcset="img/monetization-approve@2x.png 2x,img/monetization-approve@3x.png 3x" alt="Market validation">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="card-block mx-3 d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card-title card-title-custom text-justify">Market validation</div>
+                                <div class="card-text card-text-custom text-justify">Until a startup has real feedback from prospective customers, it’s basically operating wearing a blindfold and hoping for the best. We help to secure this critical validation early on to ensure the right focus from the get go.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-3">
+                            <div class="card-circled-div img-centered bg-primary-custom">
+                                <img class="card-circled-image" src="img/support.png" srcset="img/support@2x.png 2x,img/support@3x.png 3x" alt="Building for beyond">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="card-block mx-3 d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card-title card-title-custom text-justify">Building for beyond</div>
+                                <div class="card-text card-text-custom text-justify">Long-term, sustainable success requires startups to think beyond immediate markets. Our founders build for scale from the start with access to a global community of advisors, investors and customers.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-3">
+                            <div class="card-circled-div img-centered bg-primary-custom">
+                                <img class="card-circled-image" src="img/network.png" srcset="img/network@2x.png 2x,img/network@3x.png 3x" alt="The network effect">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="card-block mx-3 d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card-title card-title-custom text-justify">The network effect</div>
+                                <div class="card-text card-text-custom text-justify"> No founder can go it alone. Access to knowledge, customers, investors advice and some good old moral support are essential. Enjoy access to a ready network of support, expertise and business prospects.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-3">
+                            <div class="card-circled-div img-centered bg-primary-custom">
+                                <img class="card-circled-image" src="img/milestone-funding.png" srcset="img/milestone-funding@2x.png 2x,img/milestone-funding@3x.png 3x" alt="Milestone funding">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="card-block mx-3 d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card-title card-title-custom text-justify">Milestone funding</div>
+                                <div class="card-text card-text-custom text-justify">Raising capital is a challenging and time-consuming process, especially in the early days. We break down and offer funding in line with key early stage milestones to ensure progress doesn’t get halted at critical moments.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-3">
+                            <div class="card-circled-div img-centered bg-primary-custom">
+                                <img class="card-circled-image" src="img/performance-tablet-increase.png" srcset="img/performance-tablet-increase@2x.png 2x,img/performance-tablet-increase@3x.png 3x" alt="Staying on track">
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="card-block mx-3 d-flex flex-column justify-content-between flex-grow-1">
+                                <div class="card-title card-title-custom text-justify">Staying on track</div>
+                                <div class="card-text card-text-custom text-justify">New founders are pulled in multiple directions with limited resources and time. Our platform sets clear tasks alongside a dedicated mentor to help them prioritise and keep focused on what matters the most.</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
