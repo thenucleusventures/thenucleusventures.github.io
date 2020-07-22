@@ -13,6 +13,7 @@
             --5px: calc(var(--to-mobile-factor) * 5px);
             --8px: calc(var(--to-mobile-factor) * 8px);
             --9px: calc(var(--to-mobile-factor) * 9px);
+            --14px: calc(var(--to-mobile-factor) * 14px);
             --16px: calc(var(--to-mobile-factor) * 16px);
             --22px: calc(var(--to-mobile-factor) * 22px);
             --24px: calc(var(--to-mobile-factor) * 24px);
@@ -41,6 +42,7 @@
             --5px: 5px;
             --8px: 8px;
             --9px: 9px;
+            --14px: 14px;
             --16px: 16px;
             --22px: 22px;
             --24px: 24px;
@@ -75,19 +77,37 @@
         right: 0px;
     }
 
-    .main-text {
+    .main-h1 {
         position: absolute;
         left: 15%;
         top: 30%;
         color: var(--white);
     }
 
-    .main-h1 {
-        font-size: var(--36px);
-        margin-bottom: var(--42px)
+    .main-h2 {
+        position: absolute;
+        left: 15%;
+        top: 45%;
+        color: var(--white);
     }
 
-    .main-h2 {
+    .main-apply {
+        position: absolute;
+        left: 15%;
+        top: 60%;
+        color: var(--white);
+    }
+
+    .apply-font {
+      font-size: var(--14px);
+      font-weight: bold;
+    }
+
+    .main-h1-text {
+        font-size: var(--36px);
+    }
+
+    .main-h2-text {
         font-size: var(--24px);
         max-width: var(--500px)
     }
