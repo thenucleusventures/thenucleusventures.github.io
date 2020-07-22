@@ -15,6 +15,7 @@
             --9px: calc(var(--to-mobile-factor) * 9px);
             --14px: calc(var(--to-mobile-factor) * 14px);
             --16px: calc(var(--to-mobile-factor) * 16px);
+            --18px: calc(var(--to-mobile-factor) * 18px);
             --22px: calc(var(--to-mobile-factor) * 22px);
             --24px: calc(var(--to-mobile-factor) * 24px);
             --25px: calc(var(--to-mobile-factor) * 25px);
@@ -44,6 +45,7 @@
             --9px: 9px;
             --14px: 14px;
             --16px: 16px;
+            --18px: 18px;
             --22px: 22px;
             --24px: 24px;
             --25px: 25px;
@@ -71,7 +73,7 @@
         letter-spacing: normal;
     }
 
-    .main-container {
+    .img-container {
         position: relative;
         top: 0px;
         right: 0px;
@@ -99,8 +101,8 @@
     }
 
     .apply-font {
-      font-size: var(--14px);
-      font-weight: bold;
+        font-size: var(--14px);
+        font-weight: bold;
     }
 
     .main-h1-text {
@@ -255,4 +257,21 @@
 
     .color-dark-grey {
         color: var(--dark-grey);
+    }
+
+    .font-size-18px {
+        font-size: var(--18px);
+    }
+
+    .font-size-14px {
+        font-size: var(--14px);
+    }
+
+    .font-size-24px {
+      font-size: var(--24px);
+    }
+
+    .ourrecord {
+        position: absolute;
+        top: 10%;
     }
