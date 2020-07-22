@@ -5,7 +5,7 @@
         --colors-primary: #f4511e;
         --link-blue: #0454cc;
         --light-blue: #f1f4f8;
-        --to-mobile-factor: 0.7;
+        --to-mobile-factor: 1;
     }
 
     @media only screen and (max-width: 768px) {
@@ -39,15 +39,23 @@
             margin-right: auto;
         }
 
-        .ourrecord {}
-
-        .ourmission {
-          background-image: url("../img/18.png"); 
-          background-size: cover; 
-          background-repeat: no-repeat;
+        .ourrecord {
+            background-image: url('../img/ourrecord.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
-        .flagship {}
+        .ourmission {
+            background-image: url("../img/18.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .flagship {
+            background-image: url('../img/flagship.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
 
     }
 
@@ -80,17 +88,23 @@
 
         .ourrecord {
             height: 441px;
+            background-image: url('../img/ourrecord.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .flagship {
             height: 540px;
+            background-image: url('../img/flagship.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .ourmission {
-          height: 680px; 
-          background: url("../img/18.png"); 
-          background-size: cover; 
-          background-repeat: no-repeat;
+            height: 680px;
+            background: url("../img/18.png");
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .max-width-lg-605px {
